@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>BMW</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <section class="logo_section">
+            <img class="logo" src="img/bmw_logo.png">
+            <img class="logo" src="img/M-Logo.png">
+        </section>
+        <section class="slogan">
+            <h1>WELCOME TO M TOWN</h1>
+            <h2>Where TOO much is just right</h2>
+        </section>
+    </header>
+
+    <section class="banner">
+
+        <div class="order_box">
+            <form action="">
+                <div class="flex_box">
+                    <section class="left">
+                        <div class="user_box">
+                            <input type="text" id="fname" name="fname" placeholder="First name" required><br>
+                            <input type="text" id="lname" name="lname" placeholder="Last name" required><br>
+                            <input type="email" id="email" name="email" placeholder="Email" required><br>
+                            <input type="tel" id="phone" name="phone" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required><br>
+                            <label for="date">Date of order:</label><br>
+                            <input type="date" id="date_of_order" name="date_of_order" required><br>
+                        </div>
+                    </section>
+                    <section class="right">
+                        <label for="model">Model:</label><br>
+                        <select id="model" name="cars" required>
+                            <option value="m4">BMW M4</option>
+                            <option value="m4_coupe">BMW M4 Coupe</option>
+                            <option value="m2">BMW M2 </option>
+                            <option value="m2_coupe">BMW M2 Coupe</option>
+                            <option value="m5">BMW M5</option>
+                            <option value="m3">BMW M3</option>
+                            <option value="m8">BMW M8</option>
+                            <option value="m8_gran_coupe">BMW M8 Gran Coupe</option>
+                            <option value="x4_m">BMW X4 M</option>
+                            <option value="x3_m">BMW X3 M</option>
+                            <option value="x5_m">BMW X5 M</option>
+                            <option value="x7">BMW X7 M</option>
+                            <option value="x6">BMW X6 M</option>
+                        </select><br><br>
+
+                        <p>Select a color:</p>
+                        <label for="wildberry_metallic">
+                            <input type="checkbox" value="Wildberry metallic">
+                            <span class="checkmark"></span>Wildberry metallic</label>
+
+                        <label for="british_racing_green">
+                            <input type="checkbox" value="British Racing Green">
+                            <span class="checkmark"></span>British Racing Green
+                        </label>
+                        <label for="midnight_sapphire_metallic">
+                            <input type="checkbox" value="Midnight Sapphire II metallic">
+                            <span class="checkmark"></span>Midnight Sapphire II metallic
+                        </label>
+                        <label for="speed_yellow">
+                            <input type="checkbox" value="Speed Yellow">
+                            <span class="checkmark"></span>Speed Yellow
+                        </label>
+                        <label for="rosso_corsa">
+                            <input type="checkbox" value="Rosso Corsa">
+                            <span class="checkmark"></span>Rosso Corsa
+                        </label>
+                        <label for="liquid_copper_metallic">
+                            <input type="checkbox" value="Liquid Copper metallic">
+                            <span class="checkmark"></span>Liquid Copper metallic
+                        </label><br>
+                        <textarea id="extras" name="extras" placeholder="Write what you want extra.."></textarea>
+                        <label type="text">Upload picture</label><br>
+                        <input class="myFile" type="file" id="myFile" name="filename" hidden/><br><br>
+                        <label for="myFile"><i class="fa fa-upload" style="font-size:30px;color:#32819b;;text-shadow:2px 2px 4px #000000;"></i></label>
+                    </section>
+                </div>
+                <button type="submit" class="btn btn-primary">
+                    <i class="fa fa-car"></i>
+                    Submit
+                </button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <a href="https://nl-nl.facebook.com/BMW.Nederland/"><i class="fa fa-facebook"></i></a>
+        <a href="https://www.youtube.com/user/BMWnederland"><i class="fa fa-youtube"></i></a>
+        <a href="https://www.instagram.com/bmwnederland/"><i class="fa fa-instagram"></i></a>
+    </footer>
+</body>
+</html>
